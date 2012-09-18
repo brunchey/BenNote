@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="d170e62c-5aa0-481b-b28e-354eb551f8f8" name="BenWorkUseCases" linkedPackageId="19badaf3-a1d2-466b-9220-6a93d440aeed" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="43f325e7-926e-4994-9709-7884b32ab6f5" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="22abdab4-4721-4121-b3a8-ea533584fa71" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a7ee3d65-f0e8-4255-bcbb-8d6128a1f6bd">
+          <propertyInstance Id="9a8e2598-3459-41c6-8f10-52913979541c" name="BaseName">
+            <elementDefinition Id="6162d181-5b69-4760-b6f8-4c7550e114e4" />
+          </propertyInstance>
+          <elementDefinition Id="effbbcec-73e5-461f-9cdd-602dfb90f6a2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7abaa002-097f-48eb-91a8-1ffa16b3fef9">
+          <propertyInstance Id="1f7183c9-941b-4e32-8b38-5451f688f1df" name="ClrAttributes">
+            <elementDefinition Id="87594682-f012-4923-ac99-401a1dfdbffa" />
+          </propertyInstance>
+          <elementDefinition Id="b50aaead-b5e3-4bdd-a7b1-0e1be3ee0ab5" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="99c51ec1-5aca-4cba-860f-480d5accb235">
+          <propertyInstance Id="f06c6b83-f642-4e72-9c98-072e90ca75ea" name="Usings">
+            <elementDefinition Id="06ab50c9-d23e-44fe-b7fc-78d80702cfac" />
+          </propertyInstance>
+          <elementDefinition Id="fc3f23b9-eb87-402c-b1c4-1b9c75e7ad30" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="d088111d-3658-430c-b536-b9671dd53295" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="0fdafff4-c7ce-41bc-845f-4304a976811f" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="bb9e7373-9caa-4588-beac-ab614aa9efb6">
+          <propertyInstance Id="ce00c272-0532-4176-a150-4ca470dcaaad" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="bcce8df7-90da-4fd3-9c8d-1eb50a328165" />
+          </propertyInstance>
+          <elementDefinition Id="d2cc7e87-d8e1-4c47-92b9-5e10f8d052f5" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="81b72dec-573b-4eab-b568-4cecdc3d53e0">
+          <propertyInstance Id="e943e245-56fc-4da9-89ba-d3ccb800d500" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="19651159-218d-4763-8fc1-2f8c2bf6aa10" />
+          </propertyInstance>
+          <elementDefinition Id="a9898d10-7a75-43d0-8193-d48183d34b57" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="718dff1e-1c17-4a6e-8b24-5c7686420c02">
+          <propertyInstance Id="b6b439d7-057d-4e11-8211-c6f9d78feba3" name="ProjectPath" value="ClassTemplate=..\BenNote.DesignLib\BenNote.DesignLib.csproj|EnumTemplate=..\BenNote.DesignLib\BenNote.DesignLib.csproj|InterfaceTemplate=..\BenNote.DesignLib\BenNote.DesignLib.csproj|StructTemplate=..\BenNote.DesignLib\BenNote.DesignLib.csproj">
+            <elementDefinition Id="f78c9bbe-a9d2-45b3-aa91-838124507a68" />
+          </propertyInstance>
+          <elementDefinition Id="4a9bdfad-d87f-40f8-891c-721a9448d386" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6fe1ae2e-f9ce-44b4-b57a-6151f15204c2">
+          <propertyInstance Id="b60c4b02-8c51-4f04-993e-f75bb2aad45a" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="42045db6-9c6a-4447-9de8-f4a5142439a6" />
+          </propertyInstance>
+          <elementDefinition Id="ea68f953-117f-4c89-84a3-cd63f9aff184" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f52b379d-5c14-479b-873d-3fcbcb7512ae">
+          <propertyInstance Id="f3461b9a-ad5b-4dcf-bf51-a271a9977c3a" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="8a696ae3-fda3-4a6c-8246-a125944ab67d" />
+          </propertyInstance>
+          <elementDefinition Id="453eda48-73ae-4993-a2cb-70ce45b61738" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="376743f8-2463-4854-a11b-7cdbaa14d36c">
+          <propertyInstance Id="fcc70fd7-f888-401c-9b2c-c4c7e6ae4713" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="83ac9764-ebda-4f5c-8d92-56fc6b770815" />
+          </propertyInstance>
+          <elementDefinition Id="eb3b6693-78b4-4ca6-a6e1-172d07c9eae6" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f3b859bf-fa99-4680-b3a3-7dc279840c48">
+          <propertyInstance Id="7c7cc2c4-b79a-4576-8e43-a86a4ac47d59" name="Parameters">
+            <elementDefinition Id="e2aa0929-cd2a-4e4b-bc22-a95f57cd10ee" />
+          </propertyInstance>
+          <elementDefinition Id="6b2508ca-2bff-4089-b0d2-bb3e4c173eef" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="3b09a227-92b2-4d0a-ba30-ee47dfba8bbf" name="List Owner" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b554a20a-b213-4e94-a9f7-64e65c77ddd2" />
+        <targetEnds>
+          <association Id="40ce61ab-c665-4002-87a9-14a31d58b902" isDerived="false" sourceEndRoleName="List Owner" targetEndRoleName="Create List" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d1796a27-8bab-48e6-b860-9a0eb902c5b2" LastKnownName="Create List" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6b16431-560e-4997-9e14-77c045386824" name="List Owner" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ac04ac11-3a91-4597-a033-84ae51bea746" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5513c612-2057-4a64-9b6f-473dfd991574" name="Create List" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5cd1cd4c-338c-480b-b514-7d71366d6d82" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="71959a4c-4c3e-4b56-b416-bfbbaabad2cb" />
+          </association>
+          <association Id="93e056ac-dfc5-4791-9c8e-c1a6935f8276" isDerived="false" sourceEndRoleName="List Owner" targetEndRoleName="View All Lists" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="26021401-551c-4752-a19c-75592ba19fe7" LastKnownName="View All Lists" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7fa47da2-ee14-42d0-ac13-66c6eb729cab" name="List Owner" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c24ebc30-d4bb-4c26-8062-dd48a951e2ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8f1f31c1-ca37-47ab-9e68-def7f9d0de1d" name="View All Lists" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ac988c3a-9a7a-46ec-a432-821c2cf60e5d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9d3e035f-c378-4a1b-90fb-669c1f1aa226" />
+          </association>
+          <association Id="a7570b7b-f87c-47b7-bf21-c77c9f4eec71" isDerived="false" sourceEndRoleName="List Owner" targetEndRoleName="Update List" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b138ae85-af73-46b5-8519-de60d0801ba5" LastKnownName="Update List" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0eb02fd4-8f34-444c-872e-094666ef6fda" name="List Owner" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0ffb0561-2017-48d6-8483-50b583110631" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="335a7d03-a043-46f9-a37a-aa07d79e414f" name="Update List" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1c725b5a-0c0f-426c-9e0f-1314323a982c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea16a7f6-b390-4ea0-b819-d969cd41ead8" />
+          </association>
+          <association Id="8478b5d4-e8d2-40aa-86e4-60e6068898a2" isDerived="false" sourceEndRoleName="List Owner" targetEndRoleName="Share List" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6629032d-da51-4898-9af3-d6a1a5f2ff61" LastKnownName="Share List" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="85deb415-6aeb-444e-bf45-0ba46d09c56c" name="List Owner" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8cdc1105-6208-4813-bac8-e06cd6c16413" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="514d0e94-40df-4f73-9165-28e29e55e961" name="Share List" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1db5533c-bc2c-48fd-821f-03d2d32239f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="195fe149-e42b-4667-9f92-1f8883056141" />
+          </association>
+          <association Id="63bb62bd-5265-4302-b731-d09d52fc7b73" isDerived="false" sourceEndRoleName="List Owner" targetEndRoleName="Accept Proposed Changes to Shared List" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="204ca6df-85fb-4464-9969-023ac3ee34a9" LastKnownName="Accept Proposed Changes to Shared List" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cbb5dbeb-a5e7-4cfe-a90f-3a988a776d45" name="List Owner" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="69d1d130-c8bd-463d-9deb-4e2191c4bbfa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="de992c5b-9ca3-4ecc-b6e8-43cdef4b3ad6" name="Accept Proposed Changes to Shared List" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="56a60f45-0aaa-475b-b4bc-64d7652e1463" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6ee713b7-8b7b-4f30-aea3-9cdc8330e34b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d1796a27-8bab-48e6-b860-9a0eb902c5b2" name="Create List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="43ef6d0c-08df-44ee-bab5-9b2ef80552bb" />
+        <extendedCases>
+          <extend Id="60d50262-dae9-464e-9f42-cf7b24cf3c32">
+            <useCaseMoniker Id="57d7cb38-bcb9-4429-a803-5957ec5b12d2" LastKnownName="Record Location of Edit" />
+            <elementDefinition Id="a901d8f4-2b75-4c84-879d-7a524c9c6496" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b138ae85-af73-46b5-8519-de60d0801ba5" name="Update List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="388813cb-9a4b-4114-867c-0af391cd0b8a" />
+        <extendedCases>
+          <extend Id="35ba0b52-06f9-44f6-8517-e6727ec9c775">
+            <useCaseMoniker Id="57d7cb38-bcb9-4429-a803-5957ec5b12d2" LastKnownName="Record Location of Edit" />
+            <elementDefinition Id="5865879c-40f0-429b-a041-2a1eaff37592" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="26021401-551c-4752-a19c-75592ba19fe7" name="View All Lists" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="19fe4fcf-47b4-45e6-9f48-bde695910feb" />
+        <extendedCases>
+          <extend Id="2cbdbef7-b892-48a0-b890-5b13e192054b">
+            <useCaseMoniker Id="57d7cb38-bcb9-4429-a803-5957ec5b12d2" LastKnownName="Record Location of Edit" />
+            <elementDefinition Id="daaad77d-1c81-4fd6-a7c9-fce4213f68ea" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6629032d-da51-4898-9af3-d6a1a5f2ff61" name="Share List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="519271a9-ce4a-4a17-aa12-be494519665e" />
+        <extendedCases>
+          <extend Id="ac328711-44cb-4b1b-a615-fa8736c8638b">
+            <useCaseMoniker Id="57d7cb38-bcb9-4429-a803-5957ec5b12d2" LastKnownName="Record Location of Edit" />
+            <elementDefinition Id="ac02449b-8582-4878-a538-939439c9d26a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ca39d206-6065-4816-9318-c104d5566cdc" name="List Contributor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="faa0d4e3-ab1a-4b0d-afd8-923baffa9a27" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c4ca39cf-1d06-48f2-bfe1-21720127edc7" name="View Shared Lists" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="527fe38c-0017-4eef-9413-05c35cde1aa9" />
+        <extendedCases>
+          <extend Id="d20556d1-2727-48c2-a886-34c4d245d818">
+            <useCaseMoniker Id="3816af18-e8cf-4927-875d-bd6725d2cf69" LastKnownName="Record Location of Edit" />
+            <elementDefinition Id="efa480b3-8a68-478e-8ad6-b0cfc966b771" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9edf925b-cd59-43d6-969f-5287ca7e5417" name="Propose Changes to Shared List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fce4f14e-9dbd-4e31-979f-fec4607153b1" />
+        <extendedCases>
+          <extend Id="ccfd28ff-0689-4108-9e15-02441af6b885">
+            <useCaseMoniker Id="3816af18-e8cf-4927-875d-bd6725d2cf69" LastKnownName="Record Location of Edit" />
+            <elementDefinition Id="b78a9412-189b-4e96-8c90-fd5e3f213fb2" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="204ca6df-85fb-4464-9969-023ac3ee34a9" name="Accept Proposed Changes to Shared List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c6301c2a-4d82-4322-9c4b-72894c871310" />
+        <extendedCases>
+          <extend Id="6b5ad5ac-8da8-4ad6-91aa-fd2ea47decc3">
+            <useCaseMoniker Id="57d7cb38-bcb9-4429-a803-5957ec5b12d2" LastKnownName="Record Location of Edit" />
+            <elementDefinition Id="7981cf76-f374-4a5d-ba62-c9dbac62c899" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="57d7cb38-bcb9-4429-a803-5957ec5b12d2" name="Record Location of Edit" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="22b32c31-f39d-459b-90cf-305cc3a22dc3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b2a253d5-4a59-4eed-a69d-3d89d629b41e" name="Accept Invitation to a Shared List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fc9c16f8-4e7f-458b-8f98-238be1d867b3" />
+        <extendedCases>
+          <extend Id="988ae1b4-5c49-4f3f-9b5c-ef8b1678d3b5">
+            <useCaseMoniker Id="3816af18-e8cf-4927-875d-bd6725d2cf69" LastKnownName="Record Location of Edit" />
+            <elementDefinition Id="1d1a90e4-0d52-4967-b128-fc2fcbd969ca" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3816af18-e8cf-4927-875d-bd6725d2cf69" name="Record Location of Edit" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bc80bea4-ac2b-4671-b504-56a54d4f34a5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="19badaf3-a1d2-466b-9220-6a93d440aeed" name="BenNote.Design">
+    <elementDefinition Id="a1e339d7-efe5-44ee-9be3-ff7ba0cd0e40" />
+    <profileInstances>
+      <packageHasProfileInstances Id="eb0e2d1b-dd91-4667-ac8e-d34a6bf23441">
+        <profileInstance Id="af3b622d-7732-4a66-9b6b-10923889721b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="7a18b854-7cb6-408c-9752-617c15636d8e">
+        <profileInstance Id="3b5fa436-ae44-4959-a20c-4bb67c3b1399" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f8fe8007-5980-4ba7-8063-4940924c01f7">
+        <profileInstance Id="38f96d2d-b831-4d0a-804d-80d7033e79e8" name="CSharpProfile">
+          <elementDefinition Id="5ab219f6-313e-47a8-88e7-f1a42dced94a" />
+        </profileInstance>
+        <elementDefinition Id="3f073fda-b950-45d5-a6c1-bf51a715d42d" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="07963f1b-7a1e-46fc-8c02-ce1120d6f2be">
+        <profileInstance Id="0b0e9587-5613-45c5-acff-14d3c9decd5a" name="TextTemplateBindings">
+          <elementDefinition Id="4337cfa1-e17b-4b0c-9d5f-b3853b424f99" />
+        </profileInstance>
+        <elementDefinition Id="b4365f3e-d91d-41e6-b355-df17b89be94b" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

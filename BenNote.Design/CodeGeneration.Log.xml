@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 11.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2012-09-08T20:47:05" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2012-09-08T20:47:05" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2012-09-08T20:47:05" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2012-09-08T20:47:05" Importance="Diagnostic" Text="ProjectPath = ..\BenNote.DesignLib\BenNote.DesignLib.csproj" />
+  <Message Timestamp="2012-09-08T20:47:05" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-09-08T20:47:05" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-09-08T20:47:05" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2012-09-08T20:47:05" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2012-09-08T20:47:05" Importance="Medium" Text="BenNote.Design's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'BenNote.Design::User' -  (Class), 'BenNote.Design::ListVersion' -  (Class), 'BenNote.Design::List' -  (Class), 'BenNote.Design::ListSecurity' -  (Class), 'BenNote.Design::ListItem' -  (Class) " />
+  <Message Timestamp="2012-09-08T20:47:05" Importance="Medium" Text="'BenNote.Design::User' -  (Class) : success (file replaced) - c:\LocalProjects\BenNote\BenNote.DesignLib\GeneratedCode\User.cs" />
+  <Message Timestamp="2012-09-08T20:47:05" Importance="Medium" Text="'BenNote.Design::ListVersion' -  (Class) : success (file replaced) - c:\LocalProjects\BenNote\BenNote.DesignLib\GeneratedCode\ListVersion.cs" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Medium" Text="'BenNote.Design::List' -  (Class) : success (file replaced) - c:\LocalProjects\BenNote\BenNote.DesignLib\GeneratedCode\List.cs" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Medium" Text="'BenNote.Design::ListSecurity' -  (Class) : success (file replaced) - c:\LocalProjects\BenNote\BenNote.DesignLib\GeneratedCode\ListSecurity.cs" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Medium" Text="'BenNote.Design::ListItem' -  (Class) : success (file replaced) - c:\LocalProjects\BenNote\BenNote.DesignLib\GeneratedCode\ListItem.cs" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="Name = EnumTemplate" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="ProjectPath = ..\BenNote.DesignLib\BenNote.DesignLib.csproj" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Medium" Text="BenNote.Design's Text Template Binding: 'EnumTemplate' will apply EnumTemplate.t4 to: 'BenNote.Design::SiteRole' -  (Enumeration), 'BenNote.Design::ListVersionState' -  (Enumeration), 'BenNote.Design::ListRole' -  (Enumeration) " />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Medium" Text="'BenNote.Design::SiteRole' -  (Enumeration) : success (file replaced) - c:\LocalProjects\BenNote\BenNote.DesignLib\GeneratedCode\SiteRole.cs" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Medium" Text="'BenNote.Design::ListVersionState' -  (Enumeration) : success (file replaced) - c:\LocalProjects\BenNote\BenNote.DesignLib\GeneratedCode\ListVersionState.cs" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Medium" Text="'BenNote.Design::ListRole' -  (Enumeration) : success (file replaced) - c:\LocalProjects\BenNote\BenNote.DesignLib\GeneratedCode\ListRole.cs" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="ProjectPath = ..\BenNote.DesignLib\BenNote.DesignLib.csproj" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Medium" Text="BenNote.Design's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'BenNote.Design::User' -  (Class), 'BenNote.Design::ListVersion' -  (Class), 'BenNote.Design::List' -  (Class), 'BenNote.Design::ListSecurity' -  (Class), 'BenNote.Design::ListItem' -  (Class) " />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="'BenNote.Design::User' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="'BenNote.Design::ListVersion' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="'BenNote.Design::List' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-09-08T20:47:06" Importance="Diagnostic" Text="'BenNote.Design::ListSecurity' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-09-08T20:47:07" Importance="Diagnostic" Text="'BenNote.Design::ListItem' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2012-09-08T20:47:07" Importance="Diagnostic" Text="The selection included 8 elements which were not bound to a template." />
+  <Message Timestamp="2012-09-08T20:47:07" Importance="Diagnostic" Text="'BenNote.Design::' -  (Association): no bound template." />
+  <Message Timestamp="2012-09-08T20:47:07" Importance="Diagnostic" Text="'BenNote.Design::' -  (Association): no bound template." />
+  <Message Timestamp="2012-09-08T20:47:07" Importance="Diagnostic" Text="'BenNote.Design::' -  (Association): no bound template." />
+  <Message Timestamp="2012-09-08T20:47:07" Importance="Diagnostic" Text="'BenNote.Design::' -  (Association): no bound template." />
+  <Message Timestamp="2012-09-08T20:47:07" Importance="Diagnostic" Text="'BenNote.Design::' -  (Association): no bound template." />
+  <Message Timestamp="2012-09-08T20:47:07" Importance="Diagnostic" Text="'BenNote.Design::' -  (Association): no bound template." />
+  <Message Timestamp="2012-09-08T20:47:07" Importance="Diagnostic" Text="'BenNote.Design::' -  (Association): no bound template." />
+  <Message Timestamp="2012-09-08T20:47:07" Importance="Diagnostic" Text="'BenNote.Design::' -  (Association): no bound template." />
+  <Message Timestamp="2012-09-08T20:47:07" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>
