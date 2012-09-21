@@ -8,14 +8,12 @@ using System.Web.Security;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
-using BenNote.Web.Filters;
 using BenNote.Web.Models;
 
 namespace BenNote.Web.Controllers
 {
     [Authorize]
-    [InitializeSimpleMembership]
-    public class AccountController : Controller
+    public class AccountController : BaseController
     {
         //
         // GET: /Account/Login
@@ -35,7 +33,7 @@ namespace BenNote.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Login(LoginModel model, string returnUrl)
         {
-            if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
+            if (ModelState.IsValid && this.AuthenticationProvider.Login(model.UserName, model.Password))
             {
                 return RedirectToLocal(returnUrl);
             }

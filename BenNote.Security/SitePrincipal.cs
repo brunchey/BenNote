@@ -4,7 +4,7 @@ using System.Linq;
 using System.Security.Principal;
 using System.Web;
 
-namespace MySecurity.Security
+namespace BenNote.Security
 {
     public class SitePrincipal : ISitePrincipal
     {

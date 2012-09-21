@@ -4,24 +4,26 @@ using System.Linq;
 using System.Security.Principal;
 using System.Threading;
 using System.Web;
-using System.Web.Mvc;
 using System.Web.Security;
+using BenNote.
 
-namespace MySecurity.Security
+namespace BenNote.Security
 {
     public class FormsAuthenticationProvider : IAuthenticationProvider
     {
         private readonly HttpContextBase httpContext;
+        private readonly IUserRepository userRepository;
 
-        public FormsAuthenticationProvider(HttpContextBase httpContext)
+        public FormsAuthenticationProvider(HttpContextBase httpContext, IUserRepository userRepository )
         {
             this.httpContext = httpContext;
+            this.userRepository = userRepository;
         }
 
         #region public IAuthenticationProvider implementation
-        void IAuthenticationProvider.Authorize(AuthorizationContext filterContext)
+        void IAuthenticationProvider.Authorize()
         {
-            this.Authorize(filterContext);
+            this.Authorize();
         }
 
         bool IAuthenticationProvider.Login(string userName, string password)
@@ -43,17 +45,17 @@ namespace MySecurity.Security
 
 
         #region private IAuthenticationProvider logic
-        private void Authorize(AuthorizationContext filterContext)
+        private void Authorize()
         {
-            if (filterContext.HttpContext.User != null)
+            if (this.httpContext.User != null)
             {
-                if (filterContext.HttpContext.User.Identity.IsAuthenticated)
+                if (this.httpContext.User.Identity.IsAuthenticated)
                 {
-                    if (filterContext.HttpContext.User.Identity is FormsIdentity)
+                    if (this.httpContext.User.Identity is FormsIdentity)
                     {
 
                         FormsIdentity id =
-                                    (FormsIdentity)filterContext.HttpContext.User.Identity;
+                                    (FormsIdentity)this.httpContext.User.Identity;
                         FormsAuthenticationTicket ticket = id.Ticket;
 
                         // Get the stored user-data, in this case, our roles
@@ -61,7 +63,7 @@ namespace MySecurity.Security
                         string[] roles = userData.Split(',');
                         ISitePrincipal principle = new SitePrincipal(ticket.Name, roles);
                         Thread.CurrentPrincipal = principle as IPrincipal;
-                        filterContext.HttpContext.User = principle as IPrincipal;
+                        this.httpContext.User = principle as IPrincipal;
 
                     }
                 }

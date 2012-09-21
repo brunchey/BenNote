@@ -5,7 +5,7 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MySecurity.Security
+namespace BenNote.Security
 {
     public interface ISitePrincipal : IPrincipal
     {
