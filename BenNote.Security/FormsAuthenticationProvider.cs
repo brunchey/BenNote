@@ -5,19 +5,19 @@ using System.Security.Principal;
 using System.Threading;
 using System.Web;
 using System.Web.Security;
-using BenNote.
+
 
 namespace BenNote.Security
 {
     public class FormsAuthenticationProvider : IAuthenticationProvider
     {
         private readonly HttpContextBase httpContext;
-        private readonly IUserRepository userRepository;
+        private readonly ISitePrincipalRepository sitePrincipalRepository;
 
-        public FormsAuthenticationProvider(HttpContextBase httpContext, IUserRepository userRepository )
+        public FormsAuthenticationProvider(HttpContextBase httpContext, ISitePrincipalRepository userRepository)
         {
             this.httpContext = httpContext;
-            this.userRepository = userRepository;
+            this.sitePrincipalRepository = userRepository;
         }
 
         #region public IAuthenticationProvider implementation
@@ -36,10 +36,12 @@ namespace BenNote.Security
             FormsAuthentication.SignOut();
         }
 
-        void IAuthenticationProvider.CreateAccount(string userName, string password)
+        ISitePrincipal IAuthenticationProvider.CreateAccount(string userName, string password)
         {
-            throw new NotImplementedException();
+            return this.CreateAccount(userName, password);
         }
+
+
 
         #endregion
 
@@ -72,13 +74,15 @@ namespace BenNote.Security
 
         private bool Login(string userName, string password)
         {
-            string roles = string.Empty;
+            ISitePrincipal principal = this.sitePrincipalRepository.GetByUserName(userName);
 
-            if (userName == "Admin")
-                roles = "Admin,SuperUser, User";
+            if (principal == null)
+                return false;
 
-            if (userName == "Ben")
-                roles = "SuperUser, User";
+            if (!BCrypt.Net.BCrypt.Verify(password, principal.Password))
+                return false;
+
+            string roles = string.Join(",", principal.Roles);
 
 
             FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(
@@ -110,14 +114,19 @@ namespace BenNote.Security
             FormsAuthentication.SignOut();
         }
 
+        private ISitePrincipal CreateAccount(string userName, string password)
+        {
+
+            string encryptedPassword = BCrypt.Net.BCrypt.HashPassword(password, BCrypt.Net.BCrypt.GenerateSalt(12));
+
+            ISitePrincipal newPrincipal = this.sitePrincipalRepository.CreateUser(userName, encryptedPassword);
+
+            return newPrincipal;
+
+        }
 
 
         #endregion
 
-
-
-
-
-        
     }
 }

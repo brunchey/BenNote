@@ -10,7 +10,7 @@ namespace BenNote.Security
     public interface IAuthenticationProvider
     {
         void Authorize();
-        void CreateAccount(string userName, string password);
+        ISitePrincipal CreateAccount(string userName, string password);
         bool Login(string userName, string password);
         void Logout();
     }

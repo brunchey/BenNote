@@ -14,6 +14,11 @@ namespace BenNote.Security
             get;
         }
 
+        string Password
+        {
+            get;
+        }
+
         string[] Roles
         {
             get;

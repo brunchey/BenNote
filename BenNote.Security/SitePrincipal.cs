@@ -8,11 +8,12 @@ namespace BenNote.Security
 {
     public class SitePrincipal : ISitePrincipal
     {
-        public SitePrincipal(string userName, string[] roles)
+        public SitePrincipal(string userName, string password,  string[] roles)
         {
             this.Identity = new SiteIdentity(true, userName);
             this.Username = userName;
             this.Roles = roles;
+            this.Password = password;
         }
 
         public IIdentity Identity
@@ -37,6 +38,12 @@ namespace BenNote.Security
         }
 
         public string Username
+        {
+            get;
+            private set;
+        }
+
+        public string Password
         {
             get;
             private set;
